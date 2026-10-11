@@ -1,0 +1,1 @@
+</main><footer>Smart Blood Donor Finder System · Educational project</footer></body></html>
