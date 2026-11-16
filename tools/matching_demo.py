@@ -1,6 +1,4 @@
-#!/usr/bin/env python3
-"""Optional demo: python tools/matching_demo.py --blood-group O+ --location Kathmandu
-This illustrative score is not clinical compatibility advice."""
+
 import argparse
 SAMPLE=[{"name":"Example A","blood_group":"O+","location":"Kathmandu","available":True,"eligible":True},{"name":"Example B","blood_group":"O+","location":"Pokhara","available":True,"eligible":True},{"name":"Example C","blood_group":"A+","location":"Kathmandu","available":False,"eligible":True}]
 def score(d,loc): return min(100,50+(25 if d["eligible"] else 0)+(15 if d["available"] else 0)+(10 if loc.casefold() in d["location"].casefold() else 0))
